@@ -1,7 +1,10 @@
 const babelConfig = require("./babel.config");
+const { template, styles } = require("./styleguide.styles");
 
 module.exports = {
-  components: "src/components/Button/index.tsx",
+  template,
+  styles,
+  components: "src/components/**/index.tsx",
   webpackConfig: {
     entry: "build/script.js",
     module: {

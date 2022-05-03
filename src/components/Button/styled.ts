@@ -41,7 +41,7 @@ export const StyledButton = styled.button<{
   cursor: pointer;
   user-select: none;
   font-weight: 600;
-  color: #414141;
+  color: ${colors.text};
   outline: none;
   text-decoration: none;
   transition: all ease-in 150ms;
@@ -57,45 +57,45 @@ export const StyledButton = styled.button<{
 
   &.primary {
     background-color: ${colors.button};
-    color: #fff;
+    color: ${colors.lightText};
     &:hover {
       background-color: ${colors.button};
-      color: #fff;
+      color: ${colors.lightText};
     }
   }
 
   &.secondary {
-    background-color: #e9e9e9;
+    background-color: ${colors.secondary};
     &:hover {
-      background-color: #f1f1f1;
-      color: #414141;
+      background-color: ${colors.secondaryHover};
+      color: ${colors.text};
     }
   }
 
   &.outline {
     border-color: ${colors.button};
-    background-color: #fff;
+    background-color: ${colors.lightBg};
 
     &:hover {
       background-color: ${colors.button};
-      color: #fff;
+      color: ${colors.lightText};
     }
   }
 
   &.transparent {
-    background-color: #fff;
+    background-color: ${colors.lightBg};
     border-color: ${colors.button};
-    color: #414141;
+    color: ${colors.text};
   }
 
   &.link {
-    color: #45688f;
+    color: ${colors.linkColor};
     font-weight: 400;
     text-decoration: underline;
     border: none;
 
     &:hover {
-      color: #6683a3;
+      color: ${colors.linkHoverColor};
     }
   }
 
