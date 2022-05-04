@@ -14,6 +14,9 @@ const styles = {
     "@global body": {
       font: 'normal 400 14px "Open Sans", sans-serif',
     },
+    "@global *": {
+      boxSizing: "border-box",
+    },
   },
 };
 

@@ -50,9 +50,19 @@ export const StyledButton = styled.button<{
   width: ${({ $size, $square }) => ($square ? `${height[$size]}px` : "100%")};
   height: ${({ $size }) => height[$size]}px;
   line-height: ${({ $size }) => lineHeight[$size]}px;
+  cursor: pointer;
+
+  svg {
+    cursor: inherit;
+  }
 
   svg path {
     fill: currentColor;
+    cursor: inherit;
+  }
+
+  span {
+    cursor: inherit;
   }
 
   &.primary {
@@ -83,8 +93,8 @@ export const StyledButton = styled.button<{
   }
 
   &.transparent {
-    background-color: ${colors.lightBg};
-    border-color: ${colors.button};
+    background-color: transparent;
+    border-color: transparent;
     color: ${colors.text};
   }
 

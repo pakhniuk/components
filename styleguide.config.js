@@ -5,6 +5,18 @@ module.exports = {
   template,
   styles,
   components: "src/components/**/index.tsx",
+  sections: [
+    {
+      name: "Components",
+      components: "./src/components/**/index.tsx",
+      ignore: ["./src/components/Modal/*/index.tsx"],
+    },
+
+    {
+      name: "Modal",
+      components: "./src/components/Modal/index.ts",
+    },
+  ],
   webpackConfig: {
     entry: "build/script.js",
     module: {
