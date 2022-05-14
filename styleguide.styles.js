@@ -17,6 +17,9 @@ const styles = {
     "@global *": {
       boxSizing: "border-box",
     },
+    "@global p": {
+      padding: "8px 0",
+    },
   },
 };
 

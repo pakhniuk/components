@@ -9,9 +9,8 @@ module.exports = {
     {
       name: "Components",
       components: "./src/components/**/index.tsx",
-      ignore: ["./src/components/Modal/*/index.tsx"],
+      ignore: ["./src/components/Modal/*/index.tsx", "./src/components/Toasters/Toaster/index.tsx"],
     },
-
     {
       name: "Modal",
       components: "./src/components/Modal/index.ts",

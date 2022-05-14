@@ -15,6 +15,7 @@ const colors: Record<string, string> = {
   success: "#3bb273",
   error: "#e15554",
   warning: "#ffa42e",
+  info: "#42a5f5",
 };
 
 export default colors;

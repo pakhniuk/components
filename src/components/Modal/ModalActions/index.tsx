@@ -6,8 +6,8 @@ import { IProps } from "./types";
 export const ModalActions: FC<IProps> = ({ actions, size = "md" }) => {
   return (
     <>
-      {actions.map(({ label, ...restProps }) => (
-        <StyledButton {...restProps} size={size}>
+      {actions.map(({ label, ...restProps }, index) => (
+        <StyledButton key={`btn-${index}`} {...restProps} size={size}>
           {label}
         </StyledButton>
       ))}

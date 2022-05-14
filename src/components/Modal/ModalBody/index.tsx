@@ -1,5 +1,5 @@
 import { FC } from "react";
-import CloseIcon from "../../../assets/svg/16/close.svg";
+import CloseIcon from "../../..//assets/svg/16/cross-lg.svg";
 
 import { StyledModalBody, ModalBodyInner, ModalCloseButton } from "./styled";
 import { IProps } from "./types";

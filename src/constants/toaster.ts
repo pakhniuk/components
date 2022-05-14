@@ -1,0 +1,3 @@
+export const TOASTER_SHOW_DELAY = 30;
+export const TOASTER_LOND_REMOVE_DELAY = 12000;
+export const TOASTER_SHORT_REMOVE_DELAY = 4000;
