@@ -31,6 +31,7 @@ export const StyledButton = styled.button<{
   $disabled?: boolean;
   $size: TSize;
   $square: boolean;
+  $width?: string;
 }>`
   position: relative;
   display: block;
@@ -47,7 +48,7 @@ export const StyledButton = styled.button<{
   transition: all ease-in 150ms;
   white-space: nowrap;
   font-size: ${({ $size }) => fontSize[$size]}px;
-  width: ${({ $size, $square }) => ($square ? `${height[$size]}px` : "100%")};
+  width: ${({ $size, $square, $width }) => ($square ? `${height[$size]}px` : $width ? $width : "100%")};
   height: ${({ $size }) => height[$size]}px;
   line-height: ${({ $size }) => lineHeight[$size]}px;
   cursor: pointer;
@@ -63,6 +64,10 @@ export const StyledButton = styled.button<{
 
   span {
     cursor: inherit;
+  }
+
+  &:focus {
+    box-shadow: 0px 0px 0px 1px #fff, 0px 0px 0px 3px #d4d4d4;
   }
 
   &.primary {

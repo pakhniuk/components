@@ -10,6 +10,7 @@ export interface IProps {
   square?: boolean;
   children?: ReactNode | null;
   className?: string;
+  width?: string;
   onClick?: MouseEventHandler<HTMLButtonElement>;
   onMouseDown?: MouseEventHandler<HTMLButtonElement>;
   onMouseUp?: MouseEventHandler<HTMLButtonElement>;

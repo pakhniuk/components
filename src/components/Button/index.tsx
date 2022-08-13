@@ -15,6 +15,7 @@ const Button = forwardRef<HTMLButtonElement, IProps>(
       type = "button",
       className,
       square,
+      width = "100%",
       onClick,
       onMouseLeave,
       onMouseDown,
@@ -32,6 +33,7 @@ const Button = forwardRef<HTMLButtonElement, IProps>(
         $size={size}
         $disabled={disabled}
         $square={square}
+        $width={width}
         onMouseDown={onMouseDown}
         onMouseUp={onMouseUp}
         onMouseLeave={onMouseLeave}

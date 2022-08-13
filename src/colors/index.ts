@@ -7,6 +7,7 @@ const colors: Record<string, string> = {
   button: MAIN_COLOR,
   text: "#414141",
   bg: MAIN_COLOR,
+  darkBg: "#414141",
   lightText: "#fff",
   lightBg: "#fff",
   linkColor: "#45688f",
